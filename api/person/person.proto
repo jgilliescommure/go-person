@@ -15,8 +15,8 @@ service Person {
 
 message CreatePersonRequest {
     int32 id = 1;
-    string firstName = 2;
-    string lastName = 3;
+    string first_name = 2;
+    string last_name = 3;
     string email = 4;
 }
 
@@ -26,8 +26,8 @@ message CreatePersonReply {
 
 message UpdatePersonRequest {
     int32 id = 1;
-    string firstName = 2;
-    string lastName = 3;
+    string first_name = 2;
+    string last_name = 3;
     string email = 4;
 }
 
@@ -37,13 +37,13 @@ message GetPersonRequest {
 
 message PersonReply {
     int32 id = 1;
-    string firstName = 2;
-    string lastName = 3;
+    string first_name = 2;
+    string last_name = 3;
     string email = 4;
 }
 
 message ListPersonRequest {
-    string lastName = 3;
+    string last_name = 3;
 }
 
 message ListPersonReply {
